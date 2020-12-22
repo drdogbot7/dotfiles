@@ -1,0 +1,8 @@
+[user]
+	email = jeremy.mullis@gmail.com
+	name = Jeremy Mullis
+[core]
+[credential]
+	helper = cache
+[core]
+	autocrlf = false

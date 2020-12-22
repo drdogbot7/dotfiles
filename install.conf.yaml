@@ -1,0 +1,21 @@
+# install.conf.yaml
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    # Shell stuff
+    ~/.zshrc: shell/.zshrc
+    ~/antigen.zsh: shell/antigen.zsh
+
+    # Linters
+    ~/.prettierrc: linters/.prettierrc
+    ~/stylelintrc.json: linters/stylelintrc.json
+
+    # Git
+    ~/.gitconfig: git/.gitconfig
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
