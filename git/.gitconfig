@@ -6,3 +6,4 @@
 	helper = cache
 [core]
 	autocrlf = false
+	fileMode = false
