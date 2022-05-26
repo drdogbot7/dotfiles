@@ -2,7 +2,7 @@
 source ~/antigen.zsh
 
 # Source RVM
-source ~/.rvm/scripts/rvm
+# source ~/.rvm/scripts/rvm
 
 # 2. Use Antigen to load stuff
 ## Use oh-my-zsh
