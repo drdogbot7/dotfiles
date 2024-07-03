@@ -11,10 +11,13 @@ antigen use oh-my-zsh
 ## Use some plugins
 antigen bundle nvm
 antigen bundle docker-compose
-antigen bundle rvm
+antigen bundle command-not-found
+
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 ## Load a custom Theme
-antigen theme cloud
+antigen theme pure
 
 # 3. Commit Antigen Configuration
 antigen apply
