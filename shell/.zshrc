@@ -13,11 +13,11 @@ antigen bundle nvm
 antigen bundle docker-compose
 antigen bundle command-not-found
 
-antigen bundle zsh-users/zsh-autosuggestions
+# antigen bundle zsh-users/zsh-autosuggestions # I don't like it
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 ## Load a custom Theme
-antigen theme pure
+antigen theme cloud
 
 # 3. Commit Antigen Configuration
 antigen apply
