@@ -1,9 +1,6 @@
 # 1. Source Antigen
 source ~/antigen.zsh
 
-# Source RVM
-# source ~/.rvm/scripts/rvm
-
 # 2. Use Antigen to load stuff
 ## Use oh-my-zsh
 antigen use oh-my-zsh
@@ -22,8 +19,7 @@ antigen theme cloud
 # 3. Commit Antigen Configuration
 antigen apply
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/bin"
 
 # keybindings
 # https://wiki.archlinux.org/index.php/Zsh#Key_bindings
@@ -83,19 +79,3 @@ zstyle ':completion:*' matcher-list 'l:|=* r:|=*'
 # http://superuser.com/questions/585003/searching-through-history-with-up-and-down-arrow-in-zsh
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
-
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jeremy/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/jeremy/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jeremy/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/jeremy/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<

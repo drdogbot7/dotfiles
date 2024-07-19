@@ -19,3 +19,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [chsh -s $(which zsh), Making zsh the default shell]
+    - mkdir -p $HOME/bin
+    - curl https://cht.sh/:cht.sh > "$HOME/bin/cheat"
+    - chmod +x "$HOME/bin/cheat"
